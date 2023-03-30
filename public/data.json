@@ -1,0 +1,42 @@
+[
+    {
+        "id":"1",
+        "AuthorName":"John Doe",
+        "BlogTitle":"World of HTML",
+        "BlogImg":"https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040412.jpg?w=740&t=st=1680191203~exp=1680191803~hmac=c12e319dbda0e9e0d573b4907e64792f0d3b65248f2a08e66c560a8afc3fb8ce",
+        "AuthorImg":"https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "ReadTime":5,
+        "PublishDate":"20/2/2021"
+
+    },
+    {
+        "id":"2",
+        "AuthorName":"Warren joe",
+        "BlogTitle":"World of CSS",
+        "BlogImg":"https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?w=740&t=st=1680191459~exp=1680192059~hmac=c8634cdcd818506be60d22e1039cf92c5e550899a1f7e2fbb1d44e0481607081",
+        "AuthorImg":"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "ReadTime":4,
+        "PublishDate":"19/3/2022"
+
+    },
+    {
+        "id":"3",
+        "AuthorName":"John Lara",
+        "BlogTitle":"World of Javascript",
+        "BlogImg":"https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1680191601~exp=1680192201~hmac=ef327e85f19fea7a54cc32c760ceb71187ef9888d3815720cd389f49a78c36e7",
+        "AuthorImg":"https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+        "ReadTime":10,
+        "PublishDate":"5/2/2022"
+
+    },
+    {
+        "id":"4",
+        "AuthorName":"Mathews Doe",
+        "BlogTitle":"World of React",
+        "BlogImg":"https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg?w=740&t=st=1680191728~exp=1680192328~hmac=1bfc786935ac5afb8b70eeabcf3d267b5205bf5d6949906abbe68830330c31d0",
+        "AuthorImg":"https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+        "ReadTime":15,
+        "PublishDate":"5/2/2023"
+
+    }
+]
