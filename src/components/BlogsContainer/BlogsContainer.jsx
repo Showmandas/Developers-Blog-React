@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
+import BlogCard from "../BlogCard/BlogCard";
 
 const Blogs = () => {
 
@@ -18,17 +19,21 @@ const Blogs = () => {
     <div>
       <div className="row">
         <div className="blog-container col-md-8 col-12 col-lg-8">
-          <h2>Blogs</h2>
           <div className="col-12">
             {
                 Blogs.map(blogInfo=>{
-                    return <Blog bloginfo={blogInfo} key={blogInfo.id}/>
+                    return <BlogCard bloginfo={blogInfo} key={blogInfo.id}/>
                 })
             }
           </div>
         </div>
         <div className="bookmark-container col-md-8 col-12 col-lg-4">
           <h2>bookmark</h2>
+        </div>
+      </div>
+      <div className="row my-5 card">
+        <div className="col-lg-12 col-12">
+          <Blog/>
         </div>
       </div>
     </div>
