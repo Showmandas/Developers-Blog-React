@@ -4,6 +4,9 @@ import BlogCard from "../BlogCard/BlogCard";
 import Bookmark from "../Bookmark/Bookmark";
 import ShowTitle from "../ShowTitle/ShowTitle";
 import {addToDb, getShoppingCart} from "../../utilities/fakedb";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Blogs = () => {
@@ -55,6 +58,7 @@ const Blogs = () => {
       }else{
         const remaining=Title.filter(pd=>pd.id===title.id);
         newTitle=[...remaining,exists]
+        toast("You haave already added!");
       }
       setTitle(newTitle);
       addToDb(title.id);
@@ -80,6 +84,7 @@ const Blogs = () => {
       <div className="row my-5 card">
         <div className="col-lg-12 col-12">
           <Blog/>
+          <ToastContainer></ToastContainer>
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ const BlogCard = (props) => {
   </div>
   <div className="card-body">
     <h2 className="card-title fw-bold mb-4">{BlogTitle}</h2>
-    <button className='text-capitalize' onClick={()=>handleTime(ReadTime)}>Mark as read</button>
+    <a className='text-capitalize' onClick={()=>handleTime(ReadTime)}>Mark as read</a>
   </div>
 </div>
         </div>
