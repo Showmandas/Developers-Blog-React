@@ -1,13 +1,17 @@
-#authorImg{
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
+#authorImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
 }
 
-#txt{
-    color: rgba(17, 17, 17, 0.6);
+#txt {
+  color: rgba(17, 17, 17, 0.6);
 }
 
-#bookmarkIcon{
-    cursor: pointer;
+#bookmarkIcon {
+  cursor: pointer;
+}
+
+#markRead {
+  cursor: pointer;
 }

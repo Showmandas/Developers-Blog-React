@@ -5,8 +5,7 @@ const addToDb = id => {
     const quantity = shoppingCart[id];
     if (!quantity) {
         shoppingCart[id] = 1;
-    }
-    else {
+    } else {
         const newQuantity = quantity + 1;
         shoppingCart[id] = newQuantity;
     }
