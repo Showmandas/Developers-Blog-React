@@ -10,10 +10,8 @@ const Bookmark = ({timeSpent}) => {
         // console.log(getSpentTime);
     },[timeSpent])
     return (
-        <div>
-            
-            <h2>Time Spent:{time}</h2>
-            
+        <div className='card p-0'>
+            <p>Spent time on read : {time} min</p>
         </div>
         
     );

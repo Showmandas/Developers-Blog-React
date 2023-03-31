@@ -73,7 +73,6 @@ const Blogs = () => {
           </div>
         </div>
         <div className="bookmark-container col-md-8 col-12 col-lg-4">
-          <h2>bookmark</h2>
           <Bookmark  timeSpent={TimeSpent}  />
           <ShowTitle Title={Title}/>
         </div>

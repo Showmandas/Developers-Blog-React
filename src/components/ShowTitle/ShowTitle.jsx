@@ -7,10 +7,10 @@ const ShowTitle = ({Title}) => {
     blogTotal=blogTotal+1;
   }
     return (
-        <div>
-            <h2>Total Blog: {blogTotal}</h2>
+        <div className='flex flex-column justify-content-center p-4 bg-body-tertiary'>
+            <h5 className='text-center mb-4'>Bookmarked Blogs: {blogTotal}</h5>
             {
-                Title.map(data=><h3 className='card p-2 text-center'>{data.BlogTitle}</h3>)
+                Title.map(data=><p className='card fs-5 p-2 text-center py-3'>{data.BlogTitle}</p>)
             }
             
         </div>
