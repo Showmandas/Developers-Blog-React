@@ -3,7 +3,7 @@ import Blog from "../Blog/Blog";
 import BlogCard from "../BlogCard/BlogCard";
 import Bookmark from "../Bookmark/Bookmark";
 import ShowTitle from "../ShowTitle/ShowTitle";
-
+import {addToDb, getShoppingCart} from "../../utilities/fakedb";
 
 
 const Blogs = () => {
@@ -21,6 +21,19 @@ const Blogs = () => {
         .then(data=>setBlogs(data))
 
     },[])
+
+    useEffect(()=>{
+      const savedTitle=getShoppingCart();
+      const titleSave=[]
+      for(const id in savedTitle){
+        const addedTitle=Blogs.find(blog=>blog.id===id)
+        if(addedTitle){
+          titleSave.push(addedTitle);
+        }
+      }
+      setTitle(titleSave);
+    },[Blogs])
+
     const handleTime=(time)=>{
       const previousTime=JSON.parse(localStorage.getItem('spentTime'));
       // console.log(previousTime);
@@ -35,9 +48,16 @@ const Blogs = () => {
     }
     const showTitle=(title)=>{
       // console.log(title);
-      const newTitle=[...Title,title]
+      let newTitle=[];
+      const exists=Title.find(pd=>pd.id===title.id)
+      if(!exists){
+        newTitle=[...Title,title]
+      }else{
+        const remaining=Title.filter(pd=>pd.id===title.id);
+        newTitle=[...remaining,exists]
+      }
       setTitle(newTitle);
-       
+      addToDb(title.id);
     }
 
   return (

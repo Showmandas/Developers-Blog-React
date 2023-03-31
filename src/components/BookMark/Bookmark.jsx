@@ -6,12 +6,13 @@ const Bookmark = ({timeSpent}) => {
     const[time,setTime]=useState(timeSpent);
     useEffect(()=>{
         const getSpentTime=localStorage.getItem("spentTime")
-        // setTime(getSpentTime)
-        console.log(getSpentTime);
+        setTime(getSpentTime)
+        // console.log(getSpentTime);
     },[timeSpent])
     return (
         <div>
-            <h2>Time Spent:</h2>
+            
+            <h2>Time Spent:{time}</h2>
             
         </div>
         
